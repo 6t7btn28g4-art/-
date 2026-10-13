@@ -1,0 +1,35 @@
+西条酒蔵めぐり｜GitHub Pages開始画面維持・表示修正版
+
+■ まずこれを守る
+ZIPをGitHubに直接アップロードしないでください。ZIPを解凍し、中にあるファイルとフォルダをまとめてアップロードします。
+
+■ GitHubに並ぶ正しい形
+ud-summer/
+  index.html
+  map.html
+  mini-map.html
+  compact-ui.css
+  compact-ui.js
+  corporate-simple.css
+  map.css
+  map.js
+  assets/
+  audio/
+
+index.html と assets フォルダは、ud-summer の直下に置きます。別のフォルダの中に入れ子にしないでください。
+
+■ アップロード手順
+1. このZIPを展開します。
+2. https://github.com/6t7btn28g4-art/ud-summer を開きます。
+3. Add file → Upload files を押します。
+4. 展開した中身すべて（ファイルとフォルダ）をアップロードし、既存ファイルを更新します。
+5. Commit changes を押します。
+6. Settings → Pages で main / (root) が公開元になっていることを確認します。
+7. 1〜3分後に Ctrl+F5 で再読み込みします。
+
+■ 今回の修正
+・開始画面は残し、水紋・ロゴ・タイトルを表示します。約2.35秒で自動的に閉じ、右上の「スキップ」でも進めます。
+・開始画面が止まらないよう独立したタイマーと5秒のフェイルセーフを追加しました。初回設定は自動で画面を塞がず、設定はサイト内メニューの「使いやすさ」から開けます。
+・全ページで参照先を検査し、ローカルファイルが存在することを確認しました。
+
+※ GitHub Pagesにアップロードした後の実際の表示は、公開先で必ず確認してください。地図タイルとWebフォントなどは外部ネットワークに依存します。
